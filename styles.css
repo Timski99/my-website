@@ -1,0 +1,42 @@
+/* UNIVERSAL SELECTOR */
+body {
+    color: #000000; 
+}
+
+ul{
+    color: rgb(3, 94, 77);
+}
+/* TYPE SELECTOR */
+q{
+    color: #a52a2a;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-variant: inherit;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+img{
+    background: local;
+}
+
+/* ID SELECTOR */
+#git_header {
+    color: #ff0000;
+}
+
+
+
+/* CLASS SELECTOR */
+.first_text{
+    color: #008000;
+}
+
+.stars{
+    color: #ffd700;
+}

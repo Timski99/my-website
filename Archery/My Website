@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="CIS155 is a course that all Olympic College students who are pursuing a IT Associates degree need to take. It covers HTML and CSS." />
+    <title>CIS155: Web Development I</title>
+</head>
+
+<body>
+    <header>
+        <h1>Web Development I</h1>
+        <h2>Taught by Lindsey Handley</h2> <h3>She's built a lot of websites</h3>
+    </header> 
+        <main>
+            <img src="images/web-dev.jpeg" alt="a web developer at his computer looking at code">
+            <p>
+                This class can be <em>difficult</em> sometimes for students, if students don't take
+                enough time to practice the <strong>HTML and CSS skills</strong> that they learn in the
+                    lecture videos and in the classroom. Students who DO practice a lot, end
+                    up doing great in this class though.
+            </p>
+            <p>
+                <q>This is my favorite class to teach!</q> -Lindsey Handley
+            </p>
+            <section>
+                <h2>Assignments</h2>
+                <p>Explain the assignments...</p>
+            </section>
+            <section>
+                <h2>Final Project</h2>
+                <p>Explain the final project...</p>
+            </section>
+            <footer>
+                <p>&copy; Lindsey Handley 2023</p>
+            </footer>
+        </main>
+</body>
+
+</html>
