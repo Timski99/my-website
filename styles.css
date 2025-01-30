@@ -32,11 +32,92 @@ img{
 
 
 
-/* CLASS SELECTOR */
-.first_text{
-    color: #008000;
-}
 
 .stars{
     color: #ffd700;
+
+}
+
+/* RELATIONAL SELECTOR */
+section>ul {
+    color: #0f9757;
+} 
+
+main em {
+    color: hsl(253, 53%, 30%);
+}
+
+footer a:visited {
+    font-size: 200%;
+    color: #e90202;
+  }
+
+  footer a:hover {
+    font-size: 200%;
+    color: hwb(130 6% 5%);
+  }
+/* COMBINATION SELECTOR */
+  #git_header, h1, h2, h3 {
+    color: hsl(0, 100%, 25%);
+  }
+
+  /* BACK GROUND */
+
+  body {
+    margin: 0; 
+    height: 100vh; 
+    background-image: url('images/background.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    color: #000000; 
+}
+
+/* Header section with the text */
+header {
+    text-align: center;
+    color: #fff; /* NEW: White text to contrast with the background */
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff; /* NEW: White text to ensure readability */
+}
+
+/* List styles */
+ul, ol {
+    list-style-position: inside;
+    color: #fff; /* NEW: White text for lists */
+}
+
+/* Specific section styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #00000099; 
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+footer a {
+    color: #FFD700; /* NEW: Gold color for the link */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer p {
+    color: hwb(140 2% 36%); /* White text for footer */
 }
