@@ -1,17 +1,18 @@
 /* UNIVERSAL SELECTOR */
 body {
-    color: #000000; 
+    color: #000000;
 }
 
-ul{
-    color: rgb(217, 226, 224);
+ul {
+    color: #d9e2e0;
 }
+
 /* TYPE SELECTOR */
-q{
+q {
     color: #a5742a;
 }
 
-h2{
+h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     font-variant: inherit;
@@ -20,28 +21,30 @@ h2{
 p {
     line-height: 1.5em;
     color: #000000;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 
 /* ID SELECTOR */
 #git_header {
     color: #992705;
-    
+
 }
 
 
 .stars {
-    color: gold;  /* Make the stars gold */
-    font-size: 19px;  
-    margin-left: 10px;
+    color: gold;
+    /* Make the stars gold */
+    font-size: 1em;
+    margin-left: .25%;
     background-color: #ffffff;
 }
 
 /* RELATIONAL SELECTOR */
 section>ul {
     color: #d1e0d9;
-} 
+
+}
 
 main em {
     color: #362475;
@@ -50,81 +53,90 @@ main em {
 footer a:visited {
     font-size: 200%;
     color: #0211e9;
-  }
+}
 
-  footer a:hover {
+footer a:hover {
     font-size: 200%;
     color: #0ff235;
-  }
+}
+
 /* COMBINATION SELECTOR */
-  #h1, h2, h3 {
+#h1,
+h2,
+h3 {
     color: #4b290a;
-  }
+}
 
-  /* BACK GROUND */
+/* BACK GROUND */
 
-  body {
+body {
     color: #000000;
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensures the body takes full height */
-    background: linear-gradient(#89aa9080, #02f35280), url('images/profile1.jpg');  
-    background-size: cover; 
-    background-position: center center; 
-    background-attachment: fixed; 
-    color: #000000; 
+    height: 100%;
+    /* Ensures the body takes full height */
+    background: linear-gradient(#89aa9080, #02f35280), url('images/profile1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #000000;
 }
 
 /* Header section with the text */
 header {
     text-align: center;
-    color: #1d7c32; 
-    padding: 20px;
+    color: #1d7c32;
+    padding: 5%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Georgia', serif;
     text-align: center;
 }
 
 
 /* List styles */
-ul, ol {
+ul,
+ol {
     list-style-position: inside;
-    color: #fff; 
+    color: #fff;
+
 }
 
 /* Specific section styles */
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #88603399; 
-    border: thick outset #000000; 
+    margin: 5% 0;
+    padding: 5%;
+    background-color: #88603399;
+    border: thick outset #000000;
     width: 80%;
 }
 
 /* Footer styles */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 2%;
     background-color: #a09e9e;
 }
 
 footer a {
-    color: #FFD700; 
+    color: #FFD700;
     text-decoration: none;
     font-size: 1.2em;
 }
 
 footer p {
-    color: #05a33a; /* Text for footer */
+    color: #05a33a;
+    /* Text for footer */
 }
 
 .float-left {
     float: left;
-    margin-right: 20px;
-    margin-bottom: 10px; 
-    width: 150px; /
+    margin-right: 5%;
+    margin-bottom: 2%;
+    width: 50%;/
 }
 
 .clearfix::after {
@@ -135,20 +147,130 @@ footer p {
 
 article {
     column-count: 3;
-    column-gap: 35px;
-    column-rule: 4px solid #000000;
+    column-gap: 5%;
+    column-rule: 1.25% solid #000000;
     color: #2f0ee7;
 }
+
 #title {
     color: #992705;
 }
 
 section {
     display: grid;
-    place-items: center; /* Centers the image both horizontally and vertically */
+    place-items: center;
+    /* Centers the image both horizontally and vertically */
 }
 
 section img {
     max-width: 100%;
     height: auto;
 }
+
+ul.arrow {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 20px; 
+}
+
+ul.arrow li {
+    display: flex; 
+    align-items: center; /
+}
+
+ul.arrow li::before {
+    content: "";
+    display: inline-block;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/arrow.jpg"); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    margin-right: 10px; /* Space between the arrow and text */
+    vertical-align: middle;
+}
+
+ul.arrow li::before {
+    margin-top: 16px; /* Moved the image lower */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #55815c; /* Dark background */
+    padding: 5% 5;
+}
+
+/* Horizontal menu list */
+.nav-menu {
+    list-style-type: none; /* Remove default list bullets */
+    display: flex; /* Arrange menu items horizontally */
+    justify-content: center; /* Center the menu items */
+}
+
+/* Menu item styles */
+.nav-menu li {
+    margin: 0 4%;  /*Add space between menu items */
+}
+
+.nav-menu li a {
+    color: #124d4d; 
+    text-decoration: none; 
+    padding: 2% 3%; 
+    display: inline-block; 
+    font-size: 2em; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect */
+.nav-menu li a:hover {
+    background-color: #03f33f; 
+    border-radius: 5%;
+}
+
+/* Active link (highlighted) */
+.nav-menu li a.active {
+    background-color: #4CAF50; 
+    border-radius: 5%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .nav-menu li {
+        margin: 2% ; 
+    }
+
+    .nav-menu li a {
+        font-size: 1.25%; 
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+    /* Makes the words in the nav-menu inlarge when hovering */
+    .nav-menu li a:hover {
+        background-color: #03f33f; 
+        font-size: 3em; /* Increases the font size when hovered */
+        border-radius: 5%; 
+        transition: font-size 0.3s ease; 
+    }
