@@ -168,13 +168,14 @@ section img {
 }
 
 ul.arrow {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 20px; 
+    list-style-type: none;
+    /* Remove default bullets */
+    padding-left: 20px;
 }
 
 ul.arrow li {
-    display: flex; 
-    align-items: center; /
+    display: flex;
+    align-items: center;/
 }
 
 ul.arrow li::before {
@@ -183,15 +184,17 @@ ul.arrow li::before {
     align-items: center;
     width: 30px;
     height: 30px;
-    background-image: url("../images/arrow.jpg"); 
-    background-size: contain; 
+    background-image: url("../images/arrow.jpg");
+    background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 10px; /* Space between the arrow and text */
+    margin-right: 10px;
+    /* Space between the arrow and text */
     vertical-align: middle;
 }
 
 ul.arrow li::before {
-    margin-top: 16px; /* Moved the image lower */
+    margin-top: 16px;
+    /* Moved the image lower */
 }
 
 * {
@@ -208,58 +211,71 @@ body {
 
 /* Navigation bar styles */
 .navbar {
-    background-color: #55815c; /* Dark background */
+    background-color: #55815c;
+    /* Dark background */
     padding: 5% 5;
 }
 
 /* Horizontal menu list */
 .nav-menu {
-    list-style-type: none; /* Remove default list bullets */
-    display: flex; /* Arrange menu items horizontally */
-    justify-content: center; /* Center the menu items */
+    list-style-type: none;
+    /* Remove default list bullets */
+    display: flex;
+    /* Arrange menu items horizontally */
+    justify-content: center;
+    /* Center the menu items */
 }
 
 /* Menu item styles */
 .nav-menu li {
-    margin: 0 4%;  /*Add space between menu items */
+    margin: 0 4%;
+    /*Add space between menu items */
 }
 
 .nav-menu li a {
-    color: #124d4d; 
-    text-decoration: none; 
-    padding: 2% 3%; 
-    display: inline-block; 
-    font-size: 2em; 
-    transition: background-color 0.3s ease; 
+    color: #124d4d;
+    text-decoration: none;
+    padding: 2% 3%;
+    display: inline-block;
+    font-size: 2em;
+    transition: background-color 0.3s ease;
 }
 
 /* Hover effect */
 .nav-menu li a:hover {
-    background-color: #03f33f; 
+    background-color: #03f33f;
     border-radius: 5%;
 }
 
 /* Active link (highlighted) */
 .nav-menu li a.active {
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     border-radius: 5%;
 }
 
 
-
-
 @media (max-width: 768px) {
     .nav-menu {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav_menu li {
+        float: none;
+        width: 100%;
+    }
+
+    #nav_menu ul li a {
+        border-right: none;
+        border-bottom: #000000;
     }
 
     .nav-menu li {
-        margin: 2% ; 
+        margin: 2%;
     }
 
     .nav-menu li a {
-        font-size: 1.25%; 
+        font-size: 2em;
     }
 }
 
@@ -267,10 +283,12 @@ img {
     max-width: 100%;
     height: auto;
 }
-    /* Makes the words in the nav-menu inlarge when hovering */
-    .nav-menu li a:hover {
-        background-color: #03f33f; 
-        font-size: 3em; /* Increases the font size when hovered */
-        border-radius: 5%; 
-        transition: font-size 0.3s ease; 
-    }
+
+/* Makes the words in the nav-menu inlarge when hovering */
+.nav-menu li a:hover {
+    background-color: #03f33f;
+    font-size: 3em;
+    /* Increases the font size when hovered */
+    border-radius: 5%;
+    transition: font-size 0.3s ease;
+}
