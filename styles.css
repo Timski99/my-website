@@ -253,6 +253,33 @@ body {
     border-radius: 5%;
 }
 
+/* Grid layout for 6 images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);     
+    gap: 10px;                             
+    width: 100%;                           
+    padding: 20px;          
+    align-items: start;              
+}
+
+.image-grid .grid-item {
+    text-align: center; /* Centers the text under each image */
+}
+
+.image-grid img {
+    width: 100%;    
+    height: auto;                       
+    object-fit: cover;                     
+    border-radius: 10px;                   
+}
+
+.image-grid .grid-item p {
+    margin-top: 8px; /* space between the image and the description */
+    font-size: 1.5em; 
+    color: #333;     /* Text color */
+}
 
 @media (max-width: 768px) {
     .nav-menu {
@@ -260,22 +287,30 @@ body {
         align-items: center;
     }
 
-    #nav_menu li {
+    .nav-menu li {
         float: none;
         width: 100%;
-    }
-
-    #nav_menu ul li a {
-        border-right: none;
-        border-bottom: #000000;
-    }
-
-    .nav-menu li {
         margin: 2%;
     }
 
     .nav-menu li a {
-        font-size: 2em;
+        font-size: 1.5em; /* Adjust font size for mobile */
+        padding: 2% 3%;
+    }
+
+    .nav-menu li a:hover {
+        background-color: #03f33f;
+        font-size: 2em; /* Slightly larger font when hovered */
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr;  /* 1 column on very small screens */
     }
 }
 
