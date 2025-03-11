@@ -329,3 +329,13 @@ tr:hover {
 td {
     color: #3f3b3b;
 }
+
+/* Apply Dancing Script only to header elements */
+header h1, header h2, header h3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Optional: Make the headers bold for better visibility */
+header h1, header h2 {
+    font-weight: 700;
+}
