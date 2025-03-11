@@ -28,7 +28,9 @@ p {
     font-size: 1.2em;
 }
 
-h2, h1, h3 {
+h2,
+h1,
+h3 {
     font-family: 'Georgia', serif;
     text-align: center;
     color: #4b290a;
@@ -36,14 +38,14 @@ h2, h1, h3 {
 
 /* TEXT STYLES */
 q {
-    color: #a5742a;
+    color: #553a13;
 }
 
 .stars {
     color: gold;
     font-size: 1em;
     margin-left: .25%;
-    background-color: #ffffff;
+    
 }
 
 /* LINK STYLES */
@@ -123,13 +125,19 @@ footer p {
 .navbar {
     background-color: #55815c;
     padding: .2% 5%;
+    position: sticky; /* This will make the navbar sticky */
+    top: 0; 
+    z-index: 1000; /* Keeps the navbar on top of other content */
+    width: 100%; 
+    box-shadow: 0 4px 2px -2px gray; 
 }
+
 
 .nav-menu {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin: 0; /* Removed margin for cleaner layout */
+    margin: 0;
     padding: 0;
 }
 
@@ -140,9 +148,11 @@ footer p {
 .nav-menu li a {
     color: #124d4d;
     text-decoration: none;
-    padding: 0.8em .5em;  /* Reduced padding for a thinner navbar */
+    padding: 0.8em .5em;
+    /* Reduced padding for a thinner navbar */
     display: inline-block;
-    font-size: 1.5em; /* Adjust the font size as needed */
+    font-size: 1.5em;
+    /* Adjust the font size as needed */
     transition: background-color 0.3s ease;
 }
 
@@ -199,12 +209,17 @@ footer p {
 }
 
 /* ARTICLE STYLES */
-article {
-    column-count: 3;
-    column-gap: 5%;
-    column-rule: 1.25% solid #000000;
-    color: #2f0ee7;
+article p {
+    margin-bottom: 50px; 
+    padding:10px; 
+    background-color: #707c2acc; 
+    border-radius: 5px;
 }
+
+#Reviews {
+    color: rgb(179, 152, 2);
+}
+
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 
@@ -226,14 +241,24 @@ article {
     }
 
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+    }
+
+    article {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
     }
 }
 
 /* For screens smaller than 480px */
 @media (max-width: 480px) {
     .image-grid {
-        grid-template-columns: 1fr; /* 1 column */
+        grid-template-columns: 1fr;
+        /* 1 column */
+    }
+
+    article {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
     }
 }
 
@@ -253,7 +278,8 @@ table {
     margin-bottom: 20px;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd;
@@ -278,28 +304,32 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    font-family: 'Roboto', sans-serif; /* Use the Google Font */
+    font-family: 'Roboto', sans-serif;
+    /* Use the Google Font */
 }
 
 
 /* Applying Roboto font to the body */
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700; /* Bold for headers */
+    font-weight: 700;
+    /* Bold for headers */
     color: #4b290a;
 }
 
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 1.2em;
 }
 
@@ -311,7 +341,8 @@ table {
     font-family: 'Roboto', sans-serif;
 }
 
-th, td {
+th,
+td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #b16e6e;
@@ -331,11 +362,14 @@ td {
 }
 
 /* Apply Dancing Script only to header elements */
-header h1, header h2, header h3 {
+header h1,
+header h2,
+header h3 {
     font-family: 'Dancing Script', cursive;
 }
 
 /* Optional: Make the headers bold for better visibility */
-header h1, header h2 {
+header h1,
+header h2 {
     font-weight: 700;
 }
