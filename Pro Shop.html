@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Font Link for Dancing Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <!-- FontAwesome CDN for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -13,13 +15,19 @@
 
 <body>
     <nav class="navbar">
+        <button class="menu-button">Menu</button>
         <ul class="nav-menu">
-            <li><a href="index.html">Home <i class="fas fa-home"></i></a></li> <!-- Home icon -->
+            <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
             <li><a href="Bows.html">Bows</a></li>
             <li><a href="Accessories.html">Accessories</a></li>
-            <li><a href="Pro Shop.html">Pro Shop <i class="fas fa-bullseye"></i></a> <!-- Bullseye icon --> </li>
+            <li><a href="Pro Shop.html">Pro Shop <i class="fas fa-bullseye"></i></a></li>
         </ul>
     </nav>
+    <header id="top">
+        <h1 class="first_text">O'CONNELL ARCHERY</h1>
+        <h2 class="first_text">Family Owned and Operated</h2>
+        <h3 class="first_text">Sporting Goods</h3>
+    </header>
     <section>
         <h2 id="git_header">Pro Shop</h2>
         <img src="images/Pro Shop.jpg" alt="Different types of bows available" class="float-left">
@@ -51,6 +59,14 @@
         <p>&copy; Family owned and operated</p>
         <a href="#top">Back to Top</a> <!--link to top of page-->
     </footer>
+    <script>
+        const toggleButton = document.querySelector('.menu-button');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>

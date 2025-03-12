@@ -17,12 +17,15 @@
 </head>
 
 <body>
+
+    <!-- Navbar -->
     <nav class="navbar">
+        <button class="menu-button">Menu</button>
         <ul class="nav-menu">
-            <li><a href="index.html">Home <i class="fas fa-home"></i></a></li> <!-- Home icon -->
+            <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
             <li><a href="Bows.html">Bows</a></li>
             <li><a href="Accessories.html">Accessories</a></li>
-            <li><a href="Pro Shop.html">Pro Shop <i class="fas fa-bullseye"></i></a> <!-- Bullseye icon --> </li>
+            <li><a href="Pro Shop.html">Pro Shop <i class="fas fa-bullseye"></i></a></li>
         </ul>
     </nav>
 
@@ -30,21 +33,14 @@
         <h1 class="first_text">O'CONNELL ARCHERY</h1>
         <h2 class="first_text">Family Owned and Operated</h2>
         <h3 class="first_text">Sporting Goods</h3>
-        
     </header>
 
     <main>
-        <p>
-            We are a <em>custom</em> archery shop that supports our local hunters and archery shooters with all their
-            archery needs. <strong>O'Connell Archery</strong> has always meant quality and dependability in our work and
-            what we sell.
-            We want our customers to experience a product made here in America that exemplifies our ingenuity.
-        </p>
+        <p>We are a <em>custom</em> archery shop that supports our local hunters and archery shooters with all their archery needs...</p>
         <p>Link to Reviews <a href="blog.html">here</a>.<span class="stars"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
 
         <section id="Bows" class="clearfix">
             <h2 id="git_header"><li><a href="Bows.html">Bows</a></li></h2>
-            
             <img src="images/Bows1.jpg" alt="Different types of bows available" class="float-left">
             <p>We offer a variety of different bows to meet whatever needs you have.</p>
             <ul class="arrow">
@@ -81,8 +77,18 @@
     <footer>
         <a href="https://www.facebook.com/oconnellarchery" target="_blank">Visit our Facebook page</a>
         <p>&copy; Family owned and operated</p>
-        <a href="#top">Back to Top</a> <!-- Link to top of page -->
+        <a href="#top">Back to Top</a>
     </footer>
+
+    <script>
+        const toggleButton = document.querySelector('.menu-button');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
 </body>
 
 </html>
