@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking external stylesheets -->
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/Reviews.css">
-    <title>Document</title>
+
+    <title>Reviews - O'CONNELL ARCHERY</title>
 </head>
 
 <body>
-    <!-- Navbar Section: Contains the navigation menu -->
+    <!-- Navigation bar with links to the main pages -->
     <nav class="navbar">
         <button class="menu-button">Menu</button>
         <ul class="nav-menu">
@@ -22,15 +25,19 @@
         </ul>
     </nav>
 
+    <!-- Reviews section with customer feedback -->
     <header>
         <h1 id="Reviews">Reviews</h1>
         <article>
+            <!-- Review 1 -->
             <h1 id="title"><span class="stars"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h1>
             <h2 id="git_header"><span class="stars"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h2>
             <p>Don Cunningham:
                 <q>Awesome pro shop, they got all you need, experience being the most important. Neil's a super cool guy
                     and runs a tight shift. Stop in and find out for yourself!</q>
             </p>
+
+            <!-- Review 2 -->
             <h2 id="git_header"><span class="stars"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h2>
             <p>Gage Leigh:
                 <q>I came in to buy some arrows and after talking to the guys about some issues I was experiencing they
@@ -40,6 +47,8 @@
                     treated myself and my 2-year-old like we were family. O'Connell's shop is definitely the right place
                     if you're needing anything archery. Keep up the great work guys!</q>
             </p>
+
+            <!-- Review 3 -->
             <h2 id="git_header"><span class="stars"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></h2>
             <p>Thomas Nowrey:
                 <q>Amazing staff and great selection. Came in and they were super helpful setting up my daughter's new
@@ -49,12 +58,18 @@
         </article>
     </header>
 
-    <!-- Script for the Navbar Toggle -->
+    <!-- Footer with business info and social media links -->
+    <footer>
+        <p>&copy; Family owned and operated</p>
+        <a href="https://www.facebook.com/oconnellarchery" target="_blank">Visit our Facebook page</a>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+
+
+    <!-- Script to toggle the navigation menu visibility -->
     <script>
         const toggleButton = document.querySelector('.menu-button');
         const navMenu = document.querySelector('.nav-menu');
-
-        // Toggle navigation menu visibility on button click
         toggleButton.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });

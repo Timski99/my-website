@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Google Font Link for Dancing Script -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome CDN for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Pro Shop - O'CONNELL ARCHERY</title>
 
+    <!-- Using the 'Dancing Script' font for a fun and casual look -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for icons like the home and bullseye -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
+    <!-- The navigation bar with links to key pages -->
     <nav class="navbar">
         <button class="menu-button">Menu</button>
         <ul class="nav-menu">
@@ -24,45 +26,38 @@
             <li><a href="blog.html">Reviews</a></li>
         </ul>
     </nav>
+
+    <!-- Header with the main title of the site -->
     <header id="top">
         <h1 class="first_text">O'CONNELL ARCHERY</h1>
-      
     </header>
+
+    <!-- Main content section for the Pro Shop page -->
     <section>
         <h2 id="git_header">Pro Shop</h2>
-        <img src="../images/Pro Shop.jpg" alt="Different types of bows available" class="float-left">
+        <img src="../images/Pro Shop.jpg" alt="Pro Shop Image" class="float-left">
         <p>Need A Repair or custom fitting...</p>
         <ul class="arrow-list">
-            <li>O'Connell Archery is a full-service archery shop, and we want to partner with you through all of your
-                archery adventures. Serving the needs of archers of every level, we've seen it all and can help you with
-                just about anything you might need.</li>
-            <li>If you're just curious about archery and have questions, or maybe you're wondering how to get started
-                with it, give us a call or stop by the shop and ask any questions you have. We're happy to answer your
-                questions and have a conversation. We can help get you setup with everything you need to get on your way
-                to becoming a world-class archer.</li>
-            <li>Maybe you're a competitive 3D shooter and are traveling for a shoot or a tournament, and forgot
-                something, or need some kind of equipment repair. Come on by and we can help. We have all of the gear
-                that professional shooters need, and can help with nearly any maintenance needs that come up for you.
-            </li>
-            <li>Whether you bought your bow from us, or got it somewhere else and need help getting it tuned, we can
-                help. Bring it in to the shop and we'll take a look at the setup you have, and make the adjustments
-                necessary to have you slingin' tight groups in no time.</li>
-            <li>Youth bow tuning costs $50.00. Standard setup/tune starts at $100.00. Full service cost may vary
-                depending on your individual and equipment needs. We offer a package that we call "The Ultimate", which
-                includes a full breakdown and custom built tune of your bow, everything from shimming to bare shaft
-                tuning, laser tune, all to get you the most efficient and accurate setup matched to you and your
-                shooting style. This package typically runs $150.00.</li>
+            <li>O'Connell Archery is a full-service shop, ready to help with all your archery needs.</li>
+            <li>If you're curious about archery or need some gear, we're here to answer your questions.</li>
+            <li>We can help with anything from equipment repairs to getting your bow tuned to perfection.</li>
+            <li>You don't have to have bought your bow from us for us to help you get it in top shape.</li>
+            <li>We offer different services, including custom tuning for $150 to get the best setup for you.</li>
         </ul>
     </section>
+
+    <!-- Footer with copyright info and a link to Facebook -->
     <footer>
         <p>&copy; Family owned and operated</p>
         <a href="https://www.facebook.com/oconnellarchery" target="_blank">Visit our Facebook page</a>
         <p><a href="#top">Back to Top</a></p>
     </footer>
+
+    <!-- Script to toggle the navigation menu visibility -->
     <script>
         const toggleButton = document.querySelector('.menu-button');
         const navMenu = document.querySelector('.nav-menu');
-        
+
         toggleButton.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });
