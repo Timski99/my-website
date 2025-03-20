@@ -12,7 +12,7 @@
     <!-- FontAwesome CDN for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,23 +24,23 @@
     <nav class="navbar">
         <button class="menu-button">Menu</button>
         <ul class="nav-menu">
-            <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+            <li><a href="../index.html">Home <i class="fas fa-home"></i></a></li>
             <li><a href="Bows.html">Bows</a></li>
             <li><a href="Accessories.html">Accessories</a></li>
             <li><a href="Pro Shop.html">Pro Shop <i class="fas fa-bullseye"></i></a></li>
+            <li><a href="blog.html">Reviews</a></li>
         </ul>
     </nav>
 
     <header id="top">
         <h1 class="first_text">O'CONNELL ARCHERY</h1>
-        <h2 class="first_text">Family Owned and Operated</h2>
-        <h3 class="first_text">Sporting Goods</h3>
+
     </header>
 
     <section>
         <h2 id="git_header">Accessories</h2>
-        <img src="images/Accessories.jpg" alt="Different types of archery accessories" class="float-left">
-        <p>We have all your archery accessories you need.</p>
+        <img src="../images/Accessories.jpg" alt="Different types of archery accessories" class="float-left">
+        <p>We have all your archery accessories needs.</p>
 
         <table>
             <thead>
@@ -87,14 +87,14 @@
     </section>
 
     <footer>
-        <a href="https://www.facebook.com/oconnellarchery" target="_blank">Visit our Facebook page</a>
         <p>&copy; Family owned and operated</p>
-        <a href="#top">Back to Top</a> <!-- Link to top of page -->
+        <a href="https://www.facebook.com/oconnellarchery" target="_blank">Visit our Facebook page</a>
+        <p><a href="#top">Back to Top</a></p>
     </footer>
     <script>
         const toggleButton = document.querySelector('.menu-button');
         const navMenu = document.querySelector('.nav-menu');
-        
+
         toggleButton.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });

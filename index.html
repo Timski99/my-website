@@ -6,42 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="O'CONNELL ARCHERY New Website" />
     <title>O'CONNELL ARCHERY</title>
-
-    <!-- Google Font Link for Dancing Script -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- FontAwesome CDN for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    <!-- Navbar Section: Contains the navigation menu -->
     <nav class="navbar">
         <button class="menu-button">Menu</button>
         <ul class="nav-menu">
             <li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
-            <li><a href="Bows.html">Bows</a></li>
-            <li><a href="Accessories.html">Accessories</a></li>
-            <li><a href="Pro Shop.html">Pro Shop <i class="fas fa-bullseye"></i></a></li>
+            <li><a href="HTML/Bows.html">Bows</a></li>
+            <li><a href="HTML/Accessories.html">Accessories</a></li>
+            <li><a href="HTML/Pro Shop.html">Pro Shop <i class="fas fa-bullseye"></i></a></li>
+            <li><a href="HTML/blog.html">Reviews</a></li>
         </ul>
     </nav>
 
+    <!-- Header Section: Main title of the website -->
     <header id="top">
         <h1 class="first_text">O'CONNELL ARCHERY</h1>
-        <h2 class="first_text">Family Owned and Operated</h2>
-        <h3 class="first_text">Sporting Goods</h3>
     </header>
 
+    <!-- Main Content Section -->
     <main>
-        <p>We are a <em>custom</em> archery shop that supports our local hunters and archery shooters with all their archery needs...</p>
-        <p>Link to Reviews <a href="blog.html">here</a>.<span class="stars"> &#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+        <!-- Article Section: Shows business hours and link to reviews -->
+        <article id="Hours" class="clearfix">
+            <p>HOURS OF OPERATION</p>
+            <p>SUNDAY CLOSED</p>
+            <p>MONDAY CLOSED</p>
+            <p>TUESDAY 11-6</p>
+            <p>WEDNESDAY 11-6</p>
+            <p>THURSDAY 11-6</p>
+            <p>FRIDAY 11-6</p>
+            <p>SATURDAY 10-4</p>
+            <p>Reviews click <a href="HTML/blog.html">here</a>.<span class="stars">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+        </article>
 
+        <!-- Section for Bows Information: Includes an image and details -->
         <section id="Bows" class="clearfix">
-            <h2 id="git_header"><li><a href="Bows.html">Bows</a></li></h2>
-            <img src="images/Bows1.jpg" alt="Different types of bows available" class="float-left">
+            <h2 id="git_header">
+                <p><a href="Bows.html">Bows</a></p>
+            </h2>
+            <img src="../images/Bows1.jpg" alt="Different types of bows available" class="float-left">
             <p>We offer a variety of different bows to meet whatever needs you have.</p>
             <ul class="arrow">
                 <li>We have compound bows for both hunting and target shooting.</li>
@@ -49,9 +59,12 @@
             </ul>
         </section>
 
+        <!-- Section for Pro Shop Information -->
         <section>
-            <h2 id="git_header"><li><a href="Pro Shop.html">Pro Shop</a></li></h2>
-            <img src="images/Pro Shop.jpg" alt="Different types of bows available" class="float-left">
+            <h2 id="git_header">
+                <p><a href="Pro Shop.html">Pro Shop</a></p>
+            </h2>
+            <img src="../images/Pro Shop.jpg" alt="Different types of bows available" class="float-left">
             <p>Need A Repair or custom fitting...</p>
             <ul class="arrow-list">
                 <li>Provide everything you need from the purchase of new equipment to personal coaching, and anything
@@ -62,28 +75,34 @@
             </ul>
         </section>
 
+        <!-- Section for Accessories Information -->
         <section>
-            <h2 id="git_header"><li><a href="Accessories.html">Accessories</a></li></h2>
-            <img src="images/Accessories.jpg" alt="Different types of bows available" class="float-left">
-            <p>We have all your archery accessories you need.</p>
-            <ol class="arrow-list">
+            <h2 id="git_header">
+                <p><a href="Accessories.html">Accessories</a></p>
+            </h2>
+            <img src="../images/Accessories.jpg" alt="Different types of bows available" class="float-left">
+            <p>We have all your archery accessories needs.</p>
+            <ul class="arrow-list">
                 <li>Arrows</li>
-                <li>Quivers "From Bow Quivers to Hip"</li>
                 <li>Targets</li>
-            </ol>
+                <li>Bow Quivers and Hip</li>
+            </ul>
         </section>
     </main>
 
+    <!-- Footer Section: Copyright and social media link -->
     <footer>
-        <a href="https://www.facebook.com/oconnellarchery" target="_blank">Visit our Facebook page</a>
         <p>&copy; Family owned and operated</p>
-        <a href="#top">Back to Top</a>
+        <a href="https://www.facebook.com/oconnellarchery" target="_blank">Visit our Facebook page</a>
+        <p><a href="#top">Back to Top</a></p>
     </footer>
 
+    <!-- Script for the Navbar Toggle -->
     <script>
         const toggleButton = document.querySelector('.menu-button');
         const navMenu = document.querySelector('.nav-menu');
-        
+
+        // Toggle navigation menu visibility on button click
         toggleButton.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });

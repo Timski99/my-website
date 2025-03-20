@@ -1,0 +1,25 @@
+#title {
+    margin-bottom: 100px;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 50px;
+}
+
+p {
+    font-weight: 100px;
+}
+
+q {
+    color: #000;
+}
+
+h2#git_header {
+    text-align: left;
+}
+
+.stars {
+    display: inline-block;
+    margin-left: 0;
+}
